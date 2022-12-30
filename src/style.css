@@ -1,0 +1,132 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+}
+.background{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(./bgimage.jpg);
+}
+.background>img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(158, 155, 97, 0.9);
+    z-index: 1;
+}
+
+.logo{
+    padding-top: 10px;
+    font-size: large;
+}
+
+.nav{
+    flex: 1;
+    width: 20%;
+    height: 100%;
+}
+
+.nav>ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav>ul>li:hover{
+    border-bottom: 3px solid rgb(183, 167, 75);
+}
+
+ul>li{
+    list-style-type: none;
+    flex-grow: 1;
+    text-align: center;
+}
+li>a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.main{
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    background-color: rgba(183, 167, 75, 0.9);
+    color: black;
+    width: 50%;
+    height: 50%;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info{
+    background-color: rgba(183, 167, 75, 0.9);
+    color: black;
+    width: 50%;
+    height: 50%;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 50%;
+    height: 50%;
+    font-size: 25px;
+    background-color: rgba(183, 167, 75, 0.9);
+    color: black;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(158, 155, 97, 0.9);
+    z-index: 1; 
+}
